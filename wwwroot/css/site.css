@@ -1,0 +1,43 @@
+﻿.bg-negro {
+    background-color: #0c0b09;
+}
+
+.bg-gris {
+    background: rgb(26,24,20);
+    background: linear-gradient(90deg, rgba(26,24,20,1) 0%, rgba(46,43,29,1) 50%, rgba(26,24,20,1) 100%);
+}
+
+.txt-amarillo {
+    color: #cda45e;
+}
+
+.bg-amarillo {
+    background-color: #cda45e;
+    font-family: "Lucida Console", "Courier New", monospace !important;
+}
+
+.btn-gris {
+    color: #fff;
+    background-color: #1a1814;
+    border: 2px solid #cda45e;
+}
+
+.bg-input {
+    background-color: rgba(26, 24, 20, 0.6);
+}
+
+.btn-danger:hover {
+    color: #cda45e;
+    background-color: #1a1814;
+    border: 2px solid #fff;
+}
+
+.btn-danger:focus, .btn-danger.focus {
+    box-shadow: 0 0 0 0.2rem rgba(225, 83, 97, 0.5);
+}
+
+.custom-file-input ~ .custom-file-label::after {
+    content: "Buscar archivo";
+    background-color: #1a1814;
+    color: #cda45e;
+}

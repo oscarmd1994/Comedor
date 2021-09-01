@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thorre Vhala - Chef</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link href="~/img/logo_torrevhala.png" rel="icon">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link href="~/lib/glightbox.min.css" rel="stylesheet">
+    <link href="~/lib/aos.css" rel="stylesheet">
+    <link href="~/lib/boxicons.min.css" rel="stylesheet">
+    <link href="~/lib/swiper-bundle.min.css" rel="stylesheet">
+    <link href="~/lib/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/style.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header id="header" class="fixed-top d-flex align-items-center">
+        <div class="container container-xl d-flex align-items-center justify-content-between">
+            <a href="/Home"><img height="85" src="../../img/logo_torrevhala.png" alt="torre vhala logo"></a>
+            <h1 class="logo me-auto me-lg-0"> Torre Vhala</h1>
+            <a class="book-a-table-btn scrollto d-flex" href="../Home">Inicio</a>
+        </div>
+    </header>
+    <section id="herochef" class="d-flex align-items-center">
+        <div class="container position-relative text-center text-md-start" data-aos="zoom-in" data-aos-delay="100">
+            <div class="row">
+                <div class="col-md-12 mx-md-auto mx-auto p-md-5 p-0 col-12 bg-input">
+                    <h1 class="mb-4"><span>Sube tu menú semanal</span></h1>
+                    <form method="post" id="frmLoadMenu" enctype="multipart/form-data">
+                        <div class="input-group mb-3">
+                            <div class="custom-file">
+                                <input type="file" style="cursor:pointer;" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                                <label class="custom-file-label bg-gris text-white" for="inputGroupFile01">Selecciona tu archivo</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-4 d-flex align-items-center justify-content-center position-relative" data-aos="zoom-in" data-aos-delay="200">
+                </div>
+            </div>
+        </div>
+    </section>
+    <main id="main">
+        <section id="why-us" class="why-us">
+            <div class="container" data-aos="fade-up">
+                <div class="section-title">
+                    <h2>Maximo 6 personas por horario</h2>
+                    <div class="col-md-12">
+                        <div class="row">
+                            <p>Elige el horario semanal que mas te agrade</p>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4" style="cursor: pointer;" onclick="getSpace(1);">
+                        <div class="box" data-aos="zoom-in" data-aos-delay="100">
+                            <span>1 - 2 PM</span>
+                            <div class="h4 text-white">Disponibles <b>6</b></div>
+                            <ul id="listHorario1">
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mt-4 mt-lg-0" style="cursor: pointer;" onclick="getSpace(2);">
+                        <div class="box" data-aos="zoom-in" data-aos-delay="200">
+                            <span>2 - 3 PM</span>
+                            <div class="h4 text-white">Disponibles <b>6</b></div>
+                            <ul id="listHorario2">
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mt-4 mt-lg-0" style="cursor: pointer;" onclick="getSpace(3);">
+                        <div class="box" data-aos="zoom-in" data-aos-delay="300">
+                            <span>3 - 4 PM</span>
+                            <div class="h4 text-white">Disponibles <b>6</b></div>
+                            <ul id="listHorario3">
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <div class="container">
+            <div class="credits">
+                Designed by
+                <a href="http://raciti.com.mx/">
+                    <strong>
+                        Raci TI
+                    </strong>
+                    <img class="" height="25" src="../../img/logo_raci.png" alt="Logo Raci TI">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script defer src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script defer src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="~/lib/aos.js"></script>
+    <script defer src="~/lib/glightbox.min.js"></script>
+    <script defer src="~/lib/isotope.pkgd.min.js"></script>
+    <script defer src="~/lib/swiper-bundle.min.js"></script>
+    <script defer src="~/js/main.js"></script>
+    <script defer src="~/js/reserva.js"></script>
+</body>
+</html>
